@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "z96u/pcCGl8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kentr\\source\\repos\\ThriftSync\\ThriftSync\\ThriftSync.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kentr\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "C:\\Users\\kentr\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\kentr\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,6 @@
+@ThriftSync_HostAddress = http://localhost:5208
+
+GET {{ThriftSync_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
