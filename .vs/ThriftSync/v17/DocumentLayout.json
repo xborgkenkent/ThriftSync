@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\kentr\\source\\repos\\ThriftSync\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{532B7CDD-2133-4914-80DE-D0EC59DEF59E}|ThriftSync\\ThriftSync.csproj|c:\\users\\kentr\\source\\repos\\thriftsync\\thriftsync\\controllers\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532B7CDD-2133-4914-80DE-D0EC59DEF59E}|ThriftSync\\ThriftSync.csproj|solutionrelative:thriftsync\\controllers\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Test.cs",
+              "DocumentMoniker": "C:\\Users\\kentr\\source\\repos\\ThriftSync\\ThriftSync\\Controllers\\Test.cs",
+              "RelativeDocumentMoniker": "ThriftSync\\Controllers\\Test.cs",
+              "ToolTip": "C:\\Users\\kentr\\source\\repos\\ThriftSync\\ThriftSync\\Controllers\\Test.cs*",
+              "RelativeToolTip": "ThriftSync\\Controllers\\Test.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T08:37:26.762Z",
+              "EditorCaption": ""
             }
           ]
         }
