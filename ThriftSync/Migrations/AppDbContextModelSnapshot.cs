@@ -80,6 +80,157 @@ namespace ThriftSync.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("ThriftSync.Domain.Entities.DefaultCategory", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("IconUrl")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("DefaultCategories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("a3b9c1d2-e5f6-4a7b-8c9d-123456789001"),
+                            IconUrl = "https://www.svgrepo.com/show/413691/pay.svg",
+                            Name = "Salary & Wages",
+                            Type = "Income"
+                        },
+                        new
+                        {
+                            Id = new Guid("b4c8d2e6-f7a9-5b8c-9d0e-223456789002"),
+                            IconUrl = "https://www.svgrepo.com/show/245451/contract-loan.svg",
+                            Name = "Freelance & Contract Work",
+                            Type = "Income"
+                        },
+                        new
+                        {
+                            Id = new Guid("c5d9e3f7-a8b0-6c9d-0e1f-323456789003"),
+                            IconUrl = "https://www.svgrepo.com/show/502410/enterprise.svg",
+                            Name = "Business Revenue",
+                            Type = "Income"
+                        },
+                        new
+                        {
+                            Id = new Guid("d5e9f0a4-b7c9-3d8e-9f1a-423456789004"),
+                            IconUrl = "https://www.svgrepo.com/show/530179/stock-movement.svg",
+                            Name = "Stock Investments",
+                            Type = "Income"
+                        },
+                        new
+                        {
+                            Id = new Guid("e6f1a2b5-c8d0-4e9f-0a2b-523456789005"),
+                            IconUrl = "https://www.svgrepo.com/show/283137/real-estate-house.svg",
+                            Name = "Real Estate Income",
+                            Type = "Income"
+                        },
+                        new
+                        {
+                            Id = new Guid("f7a3b4c8-d2e6-5f9a-6b0c-623456789006"),
+                            IconUrl = "https://www.svgrepo.com/show/484569/coin.svg",
+                            Name = "Passive Income",
+                            Type = "Income"
+                        },
+                        new
+                        {
+                            Id = new Guid("a8c9d2e6-f7a1-5b0c-7d8e-723456789007"),
+                            IconUrl = "https://www.svgrepo.com/show/223958/retirement.svg",
+                            Name = "Retirement Pension",
+                            Type = "Income"
+                        },
+                        new
+                        {
+                            Id = new Guid("b9d0e3f7-a1b2-6c9d-8e0f-823456789008"),
+                            IconUrl = "https://www.svgrepo.com/show/425119/cashback-cash-payment.svg",
+                            Name = "Cashback & Rewards",
+                            Type = "Income"
+                        },
+                        new
+                        {
+                            Id = new Guid("c0e4f5a6-b2c3-7d9e-9f0a-923456789009"),
+                            IconUrl = "https://www.svgrepo.com/show/276247/lottery-bingo.svg",
+                            Name = "Lottery Winnings",
+                            Type = "Income"
+                        },
+                        new
+                        {
+                            Id = new Guid("d2e6f0a4-b7c9-3d8e-9f1a-023456789010"),
+                            IconUrl = "https://www.svgrepo.com/show/271922/rent-house.svg",
+                            Name = "Rent & Mortgage",
+                            Type = "Expense"
+                        },
+                        new
+                        {
+                            Id = new Guid("e3f7a1b5-c8d0-4e9f-0a2b-123456789011"),
+                            IconUrl = "https://www.svgrepo.com/show/530384/food.svg",
+                            Name = "Food & Groceries",
+                            Type = "Expense"
+                        },
+                        new
+                        {
+                            Id = new Guid("f4a8b9c2-d1e3-5f6a-7c0d-223456789012"),
+                            IconUrl = "https://www.svgrepo.com/show/513278/bus.svg",
+                            Name = "Transportation",
+                            Type = "Expense"
+                        },
+                        new
+                        {
+                            Id = new Guid("a5c9d3e7-f1b2-6c8d-9e0f-323456789013"),
+                            IconUrl = "https://www.svgrepo.com/show/405713/fuel-pump.svg",
+                            Name = "Fuel & Gas",
+                            Type = "Expense"
+                        },
+                        new
+                        {
+                            Id = new Guid("b6d0e4f8-a2b3-7c9d-8e0f-423456789014"),
+                            IconUrl = "https://www.svgrepo.com/show/467123/medical-receipt-3.svg",
+                            Name = "Medical & Healthcare",
+                            Type = "Expense"
+                        },
+                        new
+                        {
+                            Id = new Guid("c7e1f5a9-b3c4-8d9e-0f1a-523456789015"),
+                            IconUrl = "https://www.svgrepo.com/show/513295/credit-card.svg",
+                            Name = "Credit Card Payments",
+                            Type = "Expense"
+                        },
+                        new
+                        {
+                            Id = new Guid("d8f2a6b0-c4d5-9e0f-1a2b-623456789016"),
+                            IconUrl = "https://www.svgrepo.com/show/259646/streaming-learning.svg",
+                            Name = "Education & Subscriptions",
+                            Type = "Expense"
+                        },
+                        new
+                        {
+                            Id = new Guid("e9a3b7c1-d5e6-0f2a-3b4c-723456789017"),
+                            IconUrl = "https://www.svgrepo.com/show/261492/clothing.svg",
+                            Name = "Clothing & Shopping",
+                            Type = "Expense"
+                        },
+                        new
+                        {
+                            Id = new Guid("f0b4c8d2-e6a7-1f3a-4b5c-823456789018"),
+                            IconUrl = "https://www.svgrepo.com/show/502425/entertainment.svg",
+                            Name = "Entertainment",
+                            Type = "Expense"
+                        });
+                });
+
             modelBuilder.Entity("ThriftSync.Domain.Entities.Expense", b =>
                 {
                     b.Property<Guid>("Id")
