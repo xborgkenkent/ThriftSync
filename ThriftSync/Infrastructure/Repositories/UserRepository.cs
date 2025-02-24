@@ -33,8 +33,9 @@ public class UserRepository : IUserRepository
         return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
     }
 
-    public Task<bool> ValidateUserCredentialsAsync(string email, string password)
+    public Task<bool> ValidateUserCredentialsAsync(string hashPassword, string password)
     {
-        throw new NotImplementedException();
+        return Task.FromResult(BCrypt.Net.BCrypt.Verify(password, hashPassword));
+
     }
 }
