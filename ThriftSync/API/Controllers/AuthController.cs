@@ -6,7 +6,7 @@ using ThriftSync.Application.Services;
 namespace ThriftSync.API.Controllers;
 
 [ApiController]
-[Route("/api/[controller]")]
+[Route("api/[controller]")]
 public class AuthController: ControllerBase
 {
     private readonly AuthService _authService;
