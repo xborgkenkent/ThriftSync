@@ -28,8 +28,8 @@ public class JwtService
 
         var claims = new List<Claim>
         {
-            new Claim("id", user.Id.ToString()),
-            new Claim("email", user.Email),
+            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()), // Standard way to store UserId
+            new Claim(ClaimTypes.Email, user.Email), // Standard way to store Email
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()) // Prevent token replay
         };
 
