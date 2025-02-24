@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ThriftSync")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5a46cfae0d88d69368793b8f3738dc4b8f6337e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1272c655642e3297cfd96141599be5f01d9fd3b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ThriftSync")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ThriftSync")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
