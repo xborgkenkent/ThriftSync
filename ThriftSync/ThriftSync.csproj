@@ -30,4 +30,13 @@
     </Content>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="API\Middleware\" />
+    <Folder Include="Application\Interfaces\" />
+    <Folder Include="Application\Validators\" />
+    <Folder Include="Infrastructure\Identity\" />
+    <Folder Include="Infrastructure\Services\" />
+    <Folder Include="Tests\" />
+  </ItemGroup>
+
 </Project>
