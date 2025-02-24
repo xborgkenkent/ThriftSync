@@ -14,7 +14,15 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IExpenseRepository, ExpenseRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IDefaultCategoryRepository, DefaultCategoryRepository>();
+builder.Services.AddScoped<IGoalRepository, GoalRepository>();
 builder.Services.AddScoped<AuthService>();
+builder.Services.AddScoped<ExpenseService>();
+builder.Services.AddScoped<CategoryService>();
+builder.Services.AddScoped<DefaultCategoryService>();
+builder.Services.AddScoped<GoalService>();
 
 builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("Jwt"));
 builder.Services.AddScoped<JwtService>(); // ✅ Use Scoped, Not Singleton
@@ -47,7 +55,11 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 builder.Services.AddAuthorization();
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
+    });
 builder.Services.AddEndpointsApiExplorer();
 
 var app = builder.Build();
